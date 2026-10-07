@@ -1,7 +1,10 @@
 name: Cron Job Every 5 Minutes
 
 on:
-  schedule:
+ push:
+    branches:
+      - main
+ schedule:
     - cron: "*/5 * * * *"
 
 jobs:
